@@ -16,7 +16,7 @@ PROMPT="$*"
 echo "🤖 AI đang suy nghĩ..."
 
 JSON_PAYLOAD=$(jq -n --arg msg "$PROMPT" '{
-  model: "llama3-8b-8192",
+  model: "openai/gpt-oss-20b",
   messages: [{role: "user", content: $msg}]
 }')
 

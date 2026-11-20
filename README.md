@@ -23,6 +23,7 @@ git clone https://github.com/MD03-dev/ai-terminal-cli.git
 cd ai-terminal-cli
 chmod +x ask
 cp ask $PREFIX/bin/
+chmod +x $PREFIX/bin/ask
 
 **Bước 3: Lấy API Key (Miễn phí)**
 Tool này sử dụng AI của Groq (tốc độ siêu nhanh, miễn phí).
@@ -36,7 +37,6 @@ export AI_API_KEY="key_cua_ban"
 
 Giờ thì hỏi AI bất cứ điều gì:
 ask "Làm sao để nén file trong linux?"
-ask "Giải thích đoạn code này giúp tôi: print('Hello')"
 
 ## 🤝 Đóng góp
 Mọi ý tưởng và PR đều được hoan nghênh. Đừng quên để lại 1 Star ⭐ nếu bạn thấy tool hữu ích!
